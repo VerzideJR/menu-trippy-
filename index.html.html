@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Interactif</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: white;
+            text-align: center;
+        }
+        .menu {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 50px;
+        }
+        .menu-item {
+            background: #1e1e1e;
+            padding: 20px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .menu-item:hover {
+            background: #333;
+        }
+        .content {
+            display: none;
+            margin-top: 20px;
+            padding: 20px;
+            background: #1e1e1e;
+            border-radius: 10px;
+            text-align: left;
+        }
+        h2 {
+            color: #ffa500;
+        }
+        ul {
+            list-style-type: none;
+        }
+        li {
+            padding: 8px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Menu</h1>
+    <div class="menu">
+        <div class="menu-item" onclick="showMenu('menu1')">Voyage sans bagages</div>
+        <div class="menu-item" onclick="showMenu('menu2')">Caféine Clandestine</div>
+        <div class="menu-item" onclick="showMenu('menu3')">Antidote à la confusion</div>
+    </div>
+    
+    <div id="menu1" class="content">
+        <h2>Voyage sans bagages (Psychédéliques)</h2>
+        <ul>
+            <li>LSD 150ug - 10€ à 260€</li>
+            <li>Ketamine Needles - 30€ à 330€</li>
+            <li>Ketamine Cuisinée - 20€ à 130€</li>
+            <li>2-CB 20mg - 10€ à 140€</li>
+            <li>Champignons McKennaii - 10€/g</li>
+        </ul>
+        <h3>KETAMINE NEEDLES 🪡</h3>
+        <ul>
+            <li>1G - 30€</li>
+            <li>2G - 50€</li>
+            <li>3G - 70€</li>
+            <li>5G - 100€</li>
+            <li>10G - 150€</li>
+            <li>25G - 330€</li>
+        </ul>
+        <h3>KETAMINE CUISINÉE ❄️</h3>
+        <ul>
+            <li>1G - 20€</li>
+            <li>2G - 40€</li>
+            <li>3G - 60€</li>
+            <li>5G - 90€</li>
+            <li>8.5G - 130€</li>
+        </ul>
+        <h3>LSD 150ug</h3>
+        <ul>
+            <li>1 - 10€</li>
+            <li>3 - 20€</li>
+            <li>5 - 30€</li>
+            <li>10 - 60€</li>
+            <li>20 - 120€</li>
+            <li>30 - 160€</li>
+            <li>50 - 260€</li>
+        </ul>
+        <h3>2-CB 20mg</h3>
+        <ul>
+            <li>1 - 10€</li>
+            <li>2 - 20€</li>
+            <li>3 - 30€</li>
+            <li>5 - 40€</li>
+            <li>10 - 80€</li>
+            <li>20 - 140€ ❌</li>
+        </ul>
+        <h3>CHAMPIGNONS HALLUCINOGÈNES 🌈🍄</h3>
+        <ul>
+            <li>McKennaii - 8G dispo - 10€/G</li>
+        </ul>
+        <p>Pour un calcul du dosage nécessaire : <a href="https://www.zamnesia.fr/calculateur-dosage-champignon-magique" target="_blank">Calculateur de dosage</a></p>
+    </div>
+
+    <div id="menu2" class="content">
+        <h2>Caféine Clandestine (Stimulants)</h2>
+        <ul>
+            <li>MDMA Cola - 10€ à 20€</li>
+            <li>SPEED Pasta - 6€/g à 20€/g</li>
+            <li>TAZ Squid Game - 10€ à 300€</li>
+            <li>3MMC Crystal - 25€ à 160€</li>
+        </ul>
+        <h3>MDMA COLA 🔶🔞</h3>
+        <ul>
+            <li>0.5g - 10€</li>
+            <li>1g - 20€</li>
+        </ul>
+        <h3>SPEED PASTA 🌩️</h3>
+        <ul>
+            <li>1G - 20€</li>
+            <li>3G - 40€</li>
+            <li>5G - 50€</li>
+            <li>10G - 90€</li>
+            <li>20G - 160€</li>
+            <li>30G - 210€</li>
+            <li>50G - 300€</li>
+        </ul>
+        <h3>TAZ SQUID-GAME ROSE 267MG 🟥 🔴🔺</h3>
+        <ul>
+            <li>2 Taz - 10€</li>
+            <li>5 Taz - 20€</li>
+            <li>10 Taz - 40€</li>
+            <li>20 Taz - 70€</li>
+            <li>50 Taz - 160€</li>
+            <li>100 Taz - 300€</li>
+        </ul>
+        <h3>3MMC CRYSTAL 💎</h3>
+        <ul>
+            <li>1g - 25€</li>
+            <li>2g - 50€</li>
+            <li>3g - 70€</li>
+            <li>5g - 100€</li>
+            <li>10g - 160€</li>
+        </ul>
+    </div>
+
+    <div id="menu3" class="content">
+        <h2>Antidote à la confusion pharmaceutique</h2>
+        <ul>
+            <li>Rivotril/Clonazepam - 2mg</li>
+            <li>Pregabaline/Lyrica - 300mg</li>
+            <li>Dry Sift Nofarm SUPER HALWA DRY - 20€ à 150€</li>
+        </ul>
+        <h3>RIVOTRIL - CLONAZEPAM</h3>
+        <ul>
+            <li>10 Pills 2mg - ?€</li>
+            <li>20 Pills 2mg - ?€</li>
+            <li>30 Pills 2mg - ?€</li>
+        </ul>
+        <h3>PREGABALINE/LYRICA 300mg</h3>
+        <ul>
+            <li>3 Pills - ?€</li>
+            <li>5 Pills - ?€</li>
+            <li>10 Pills - ?€</li>
+            <li>20 Pills - ?€</li>
+            <li>30 Pills - ?€</li>
+        </ul>
+        <h3>DRY SIFT 73u/220u</h3>
+        <ul>
+            <li>2.5G - 20€</li>
+            <li>5G - 40€</li>
+            <li>10G - 70€</li>
+            <li>25G - 150€</li>
+        </ul>
+    </div>
+
+    <script>
+        function showMenu(id) {
+            document.querySelectorAll('.content').forEach(div => div.style.display = 'none');
+            document.getElementById(id).style.display = 'block';
+        }
+    </script>
+</body>
+</html>
